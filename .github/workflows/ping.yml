@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Ping App 1
-      run: curl -L --max-redirs 5 -A "Mozilla/5.0" https://app1.streamlit.app/ || true
+      run: curl -L --max-redirs 5 -A "Mozilla/5.0" https://ashus-pricelist.streamlit.app/ || true
   
     - name: Ping App 2
-      run: curl -L --max-redirs 5 -A "Mozilla/5.0" https://app2.streamlit.app/ || true
+      run: curl -L --max-redirs 5 -A "Mozilla/5.0" https://mayas-cafe.streamlit.app/ || true
