@@ -1,0 +1,14 @@
+name: Keep Streamlit Awake
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # every 10 minutes
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Streamlit App
+        run: |
+          curl -L -A "Mozilla/5.0" https://mayas-cafe.streamlit.app/
